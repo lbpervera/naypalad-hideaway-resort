@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking Details</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Logo" />
+    </a>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="villas.html">Villas</a>
+    <a href="booking.html">Book</a>
+    <a href="bookings.html">My Bookings</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <a href="booking.html" class="book-btn">Book Now</a>
+</header>
+
+<section class="page-section">
+  <div class="container">
+    <h1 class="section-title">BOOKING DETAILS</h1>
+    <div class="gold-line"></div>
+    <p class="section-subtitle" id="bookingIdLabel">Booking ID : —</p>
+
+    <div class="details-wrapper">
+      <div class="details-card card">
+        <table class="details-table" id="detailTable">
+          <tr>
+            <td>Loading...</td>
+            <td></td>
+          </tr>
+        </table>
+
+        <div class="total-box">
+          <h4>Total Cost</h4>
+          <h2 id="detailTotal">PHP 0.00</h2>
+        </div>
+      </div>
+
+      <div class="details-side">
+        <img id="detailImage" src="images/hero.jpg" alt="Villa" />
+
+        <div class="status-box">
+          <h3>STATUS</h3>
+          <span class="status active" id="detailStatus">Active</span>
+        </div>
+
+        <a href="#" class="cancel-btn" id="cancelBookingBtn">Cancel Booking</a>
+      </div>
+    </div>
+
+    <div class="back-home">
+      <a href="bookings.html" class="primary-btn">← Back to My Bookings</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-column">
+      <h2>NAY PALAD</h2>
+      <p>Hideaway Resort</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Location</h3>
+      <p>General Luna</p>
+      <p>Siargao Island</p>
+      <p>Philippines</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>+63 917 123 4567</p>
+      <p>info@naypaladhideaway.com</p>
+    </div>
+  </div>
+
+  <hr />
+  <p class="copyright">© 2026 Nay Palad Hideaway Resort</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

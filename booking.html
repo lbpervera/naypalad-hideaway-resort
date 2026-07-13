@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Villa</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Nay Palad Logo" />
+    </a>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="villas.html">Villas</a>
+    <a class="active" href="booking.html">Book</a>
+    <a href="bookings.html">My Bookings</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <a href="booking.html" class="book-btn">Book Now</a>
+</header>
+
+<section class="booking-section page-section">
+  <div class="container">
+    <h1 class="section-title">BOOK A VILLA</h1>
+    <div class="gold-line"></div>
+    <p class="section-subtitle">Fill in the details below to create your reservation.</p>
+
+    <div class="booking-wrapper">
+      <form id="bookingForm" class="booking-form card">
+        <div class="booking-grid">
+          <div>
+            <label for="guestName">Guest Name</label>
+            <input id="guestName" type="text" placeholder="Enter guest name" />
+          </div>
+
+          <div>
+            <label for="contactNumber">Contact Number</label>
+            <input id="contactNumber" type="text" placeholder="09XXXXXXXXX" />
+          </div>
+
+          <div>
+            <label for="villa">Villa Type</label>
+            <select id="villa">
+              <option value="Perlah Villa">Perlah Villa</option>
+              <option value="Coral Villa">Coral Villa</option>
+              <option value="Ocean View Villa">Ocean View Villa</option>
+              <option value="Garden View Villa">Garden View Villa</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="guests">Guests</label>
+            <input id="guests" type="number" value="1" min="1" />
+          </div>
+
+          <div>
+            <label for="checkin">Check-in Date</label>
+            <input id="checkin" type="date" />
+          </div>
+
+          <div>
+            <label for="checkout">Check-out Date</label>
+            <input id="checkout" type="date" />
+          </div>
+        </div>
+
+        <label style="margin-top:25px;" for="nights">Number of Nights</label>
+        <input id="nights" type="number" value="1" min="1" />
+
+        <div style="margin-top:25px;">
+          <button type="submit" class="primary-btn" style="width:100%;">Confirm Reservation</button>
+        </div>
+      </form>
+
+      <div class="booking-summary card">
+        <h2>VILLA DETAILS</h2>
+        <img src="images/perlah.jpg" id="villaImage" alt="Perlah Villa" />
+
+        <div class="summary">
+          <p><strong>Villa</strong></p>
+          <span id="villaName">Perlah Villa</span>
+
+          <p><strong>Rate per Night</strong></p>
+          <span id="villaRate">PHP 25,000.00</span>
+
+          <p><strong>Total Cost</strong></p>
+          <div class="total-box">
+            <h1 id="totalCost">PHP 25,000.00</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-column">
+      <h2>NAY PALAD</h2>
+      <p>Hideaway Resort</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Location</h3>
+      <p>General Luna</p>
+      <p>Siargao Island</p>
+      <p>Philippines</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>+63 917 123 4567</p>
+      <p>info@naypaladhideaway.com</p>
+    </div>
+  </div>
+
+  <hr />
+  <p class="copyright">© 2026 Nay Palad Hideaway Resort</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

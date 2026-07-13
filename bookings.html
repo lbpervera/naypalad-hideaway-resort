@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bookings</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Logo" />
+    </a>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="villas.html">Villas</a>
+    <a href="booking.html">Book</a>
+    <a class="active" href="bookings.html">My Bookings</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <a href="booking.html" class="book-btn">Book Now</a>
+</header>
+
+<section class="page-section">
+  <div class="container">
+    <h1 class="section-title">MY BOOKINGS</h1>
+    <div class="gold-line"></div>
+    <p class="section-subtitle">View and manage your reservations.</p>
+
+    <div class="search-box">
+      <input id="searchBooking" type="text" placeholder="Enter Booking ID / Guest / Villa" />
+      <button id="searchBtn" class="primary-btn" type="button">Search</button>
+    </div>
+
+    <div class="booking-table card">
+      <table>
+        <thead>
+          <tr>
+            <th>Booking ID</th>
+            <th>Guest Name</th>
+            <th>Villa</th>
+            <th>Check-in</th>
+            <th>Check-out</th>
+            <th>Nights</th>
+            <th>Total Cost</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="bookingsTableBody">
+          <tr>
+            <td colspan="9" style="padding:30px; text-align:center;">Loading bookings...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="back-home">
+      <a href="index.html" class="primary-btn">Back to Home</a>
+    </div>
+
+    <div class="feature-bar secondary">
+      <div class="feature">
+        <i class="fa-regular fa-circle-check"></i>
+        <div>
+          <h3>Best Price</h3>
+          <p>Guarantee</p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="feature">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <div>
+          <h3>Easy Booking</h3>
+          <p>Process</p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="feature">
+        <i class="fa-regular fa-life-ring"></i>
+        <div>
+          <h3>24/7 Support</h3>
+          <p>Customer Care</p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="feature">
+        <i class="fa-solid fa-shield-halved"></i>
+        <div>
+          <h3>Secure</h3>
+          <p>Transactions</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-column">
+      <h2>NAY PALAD</h2>
+      <p>Hideaway Resort</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Location</h3>
+      <p>General Luna</p>
+      <p>Siargao Island</p>
+      <p>Philippines</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>+63 917 123 4567</p>
+      <p>info@naypaladhideaway.com</p>
+    </div>
+  </div>
+
+  <hr />
+  <p class="copyright">© 2026 Nay Palad Hideaway Resort</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  const searchBtn = document.getElementById("searchBtn");
+  const searchBooking = document.getElementById("searchBooking");
+  if (searchBtn && searchBooking) {
+    searchBtn.addEventListener("click", () => {
+      searchBooking.dispatchEvent(new Event("input"));
+    });
+  }
+</script>
+</body>
+</html>
